@@ -1,0 +1,347 @@
+/* Current Impact Section Styles */
+
+.current-impact-section {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.current-impact-section::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(131, 157, 99, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.impact-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+}
+
+.impact-header h2 {
+    font-size: 3rem;
+    color: #2C3E50;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.impact-header .tagline {
+    font-size: 1.3rem;
+    color: #839D63;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.impact-header .description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Impact Stats Grid */
+.impact-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 4rem 0;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, #b8d89f 0%, #a8c98f 100%);
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.stat-number {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #2C3E50;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    font-family: var(--font-heading);
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    color: #2C3E50;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+/* Featured Projects Section */
+.featured-projects {
+    margin-top: 5rem;
+}
+
+.section-subtitle {
+    font-size: 2.2rem;
+    color: #2C3E50;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.section-subtitle::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, #839D63, #F4D03F);
+    border-radius: 2px;
+}
+
+.project-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.project-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    align-items: center;
+}
+
+.project-card:nth-child(even) .project-content {
+    direction: rtl;
+}
+
+.project-card:nth-child(even) .project-text {
+    direction: ltr;
+}
+
+.project-image {
+    height: 400px;
+    background-color: #e9ecef;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-text {
+    padding: 3rem;
+}
+
+.project-number {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #839D63, #a8c98f);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.project-title {
+    font-size: 1.8rem;
+    color: #2C3E50;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.project-pillar {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    background-color: rgba(131, 157, 99, 0.15);
+    color: #839D63;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.project-detail {
+    margin-bottom: 1.2rem;
+}
+
+.project-detail-label {
+    font-weight: 700;
+    color: #2C3E50;
+    margin-bottom: 0.3rem;
+}
+
+.project-detail-text {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Call to Action Section */
+.impact-cta {
+    background: linear-gradient(135deg, #014d40 0%, #023d32 100%);
+    padding: 4rem 3rem;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.impact-cta::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 300px;
+    height: 300px;
+    border: 3px dashed rgba(244, 208, 63, 0.3);
+    border-radius: 50%;
+    animation: rotate 40s linear infinite;
+}
+
+.impact-cta h3 {
+    font-size: 2.2rem;
+    color: white;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.impact-cta p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-btn {
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.cta-btn-primary {
+    background-color: #F4D03F;
+    color: #2C3E50;
+}
+
+.cta-btn-primary:hover {
+    background-color: #f5d961;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(244, 208, 63, 0.4);
+}
+
+.cta-btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.cta-btn-secondary:hover {
+    background-color: white;
+    color: #014d40;
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .project-content {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card:nth-child(even) .project-content {
+        direction: ltr;
+    }
+
+    .project-image {
+        height: 300px;
+    }
+
+    .impact-header h2 {
+        font-size: 2.2rem;
+    }
+
+    .stat-number {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .current-impact-section {
+        padding: 4rem 0;
+    }
+
+    .impact-stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .cta-btn {
+        width: 100%;
+    }
+}
