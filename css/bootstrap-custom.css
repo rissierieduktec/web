@@ -1,0 +1,84 @@
+/* Bootstrap Navbar Custom Styles */
+.site-header {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.site-header .navbar {
+    padding: 1rem 0;
+}
+
+.navbar-brand img {
+    max-width: 150px;
+    height: auto;
+}
+
+.navbar-nav {
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-link {
+    color: var(--secondary-color, #2C3E50) !important;
+    font-weight: 600;
+    font-family: 'Outfit', sans-serif;
+    padding: 0.5rem 1rem !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary-color, #839D63) !important;
+}
+
+.nav-link.lang-switch {
+    border: 1px solid var(--secondary-color, #2C3E50);
+    border-radius: 4px;
+    padding: 0.5rem 1rem !important;
+}
+
+.nav-link.lang-switch:hover {
+    background-color: var(--light-bg, #f9f9f9);
+}
+
+.btn-primary {
+    background-color: var(--primary-color, #839D63) !important;
+    border-color: var(--primary-color, #839D63) !important;
+    color: #ffffff !important;
+    padding: 0.8rem 1.5rem !important;
+    border-radius: 50px !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+.btn-primary:hover {
+    background-color: #6b8350 !important;
+    border-color: #6b8350 !important;
+}
+
+/* Mobile responsive */
+@media (max-width: 991px) {
+    .navbar-nav {
+        gap: 0;
+        padding: 1rem 0;
+    }
+
+    .nav-item {
+        width: 100%;
+        border-bottom: 1px solid #eee;
+    }
+
+    .nav-link {
+        padding: 1rem !important;
+    }
+
+    .btn-primary {
+        margin-top: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+}
