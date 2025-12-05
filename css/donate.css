@@ -131,7 +131,7 @@
 
 .donate-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.2fr;
     gap: 4rem;
     align-items: start;
 }
@@ -178,6 +178,7 @@
 .donate-form-container {
     position: sticky;
     top: 100px;
+    min-width: 450px;
 }
 
 .paypal-wrapper {
@@ -187,6 +188,7 @@
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
     border: 2px solid #e9ecef;
     transition: all 0.3s ease;
+    min-width: 400px;
 }
 
 .paypal-wrapper:hover {
@@ -199,14 +201,17 @@
     color: #2c3e50;
     margin-bottom: 2rem;
     text-align: center;
+    white-space: normal;
 }
 
 #paypal-container-9N6ZJ9D74L25U {
     margin: 2rem 0;
     min-height: 150px;
+    min-width: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .payment-note {
