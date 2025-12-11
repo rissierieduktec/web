@@ -1,0 +1,205 @@
+/* Get Involved Page Styles */
+
+/* Parallax Hero Section */
+.parallax-hero {
+    background-image: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), url('../img/hero-bg-new.jpg');
+    /* Placeholder image path */
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.parallax-hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: fadeInDown 1s ease-out;
+}
+
+.parallax-hero .lead {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp 1s ease-out 0.5s forwards;
+    opacity: 0;
+}
+
+/* Ways to Help Section */
+.ways-to-help {
+    padding: 6rem 0;
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 2.5rem;
+    color: #2C3E50;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #3456A3;
+    margin: 1rem auto 0;
+}
+
+.help-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.help-card {
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    text-align: center;
+    padding: 3rem 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.help-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.help-icon {
+    font-size: 3rem;
+    color: #3456A3;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    padding: 1rem;
+    background-color: rgba(52, 86, 163, 0.1);
+    border-radius: 50%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.help-card:hover .help-icon {
+    background-color: #3456A3;
+    color: #ffffff;
+}
+
+.help-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #2C3E50;
+}
+
+.help-card p {
+    color: #555;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* Multimedia Section */
+.multimedia-section {
+    padding: 6rem 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.media-container {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Spread the Word Section */
+.spread-word {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #0E2B5E 0%, #1a3a3a 100%);
+    color: #ffffff;
+    text-align: center;
+}
+
+.spread-word h2 {
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+.share-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.share-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.share-btn:hover {
+    background-color: #ffffff;
+    color: #0E2B5E;
+    transform: translateY(-5px);
+}
+
+/* Animations Keyframes */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .parallax-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .help-grid {
+        grid-template-columns: 1fr;
+    }
+}
