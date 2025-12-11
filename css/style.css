@@ -105,13 +105,14 @@ a:hover {
 }
 
 .btn-primary {
-    background-color: var(--primary-color);
-    color: var(--white);
+    background-color: #FFDD00;
+    color: #0E2B5E;
+    font-weight: 800;
 }
 
 .btn-primary:hover {
-    background-color: #c0392b;
-    color: var(--white);
+    background-color: #eebb00;
+    color: #0E2B5E;
 }
 
 .btn-secondary {
@@ -1691,4 +1692,4 @@ a:hover {
                 gap: 2rem;
             }
         }
-    }
+    }}

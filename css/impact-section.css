@@ -281,12 +281,13 @@
 }
 
 .cta-btn-primary {
-    background-color: #F4D03F;
-    color: #2C3E50;
+    background-color: #FFDD00;
+    color: #0E2B5E;
+    font-weight: 800;
 }
 
 .cta-btn-primary:hover {
-    background-color: #f5d961;
+    background-color: #eebb00;
     transform: translateY(-3px);
     box-shadow: 0 10px 25px rgba(244, 208, 63, 0.4);
 }
