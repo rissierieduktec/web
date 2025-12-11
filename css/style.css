@@ -60,6 +60,7 @@ a:hover {
     top: 0;
     z-index: 1000;
     padding: 1rem 0;
+    border-bottom: 4px solid #3456A3;
 }
 
 .site-header .container {
@@ -375,7 +376,7 @@ a:hover {
 }
 
 .read-more {
-    color: var(--accent-color);
+    color: #3456A3;
     font-weight: 600;
     text-transform: uppercase;
     font-size: 0.9rem;
@@ -1008,16 +1009,13 @@ a:hover {
 
 /* What We Do Page Styles */
 .visual-style-hero {
-    background-color: #7C9BC0;
-    /* Dark Green from reference */
+    background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('../img/hero-bg-new.jpg');
+    /* Original hero style */
+    background-size: cover;
+    background-position: center;
     color: #ffffff;
     padding: 6rem 0;
     text-align: center;
-    background-image: url('../img/hero-bg-new.jpg');
-    /* Optional: use the hero bg with overlay */
-    background-blend-mode: overlay;
-    background-size: cover;
-    background-position: center;
 }
 
 .visual-style-hero h1 {
@@ -1204,16 +1202,13 @@ a:hover {
 
     /* What We Do Page Styles */
     .visual-style-hero {
-        background-color: #7C9BC0;
-        /* Dark Green from reference */
+        background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('../img/hero-bg-new.jpg');
+        /* Original hero style */
+        background-size: cover;
+        background-position: center;
         color: #ffffff;
         padding: 6rem 0;
         text-align: center;
-        background-image: url('../img/hero-bg-new.jpg');
-        /* Optional: use the hero bg with overlay */
-        background-blend-mode: overlay;
-        background-size: cover;
-        background-position: center;
     }
 
     .visual-style-hero h1 {
