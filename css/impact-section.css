@@ -224,7 +224,7 @@
 
 /* Call to Action Section */
 .impact-cta {
-    background: linear-gradient(135deg, #014d40 0%, #023d32 100%);
+    background: linear-gradient(135deg, #7C9BC0 0%, #7C9BC0 100%);
     padding: 4rem 3rem;
     border-radius: 20px;
     text-align: center;
@@ -299,7 +299,7 @@
 
 .cta-btn-secondary:hover {
     background-color: white;
-    color: #014d40;
+    color: #7C9BC0;
     transform: translateY(-3px);
 }
 
