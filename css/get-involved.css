@@ -2,8 +2,8 @@
 
 /* Parallax Hero Section */
 .parallax-hero {
-    background-image: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), url('../img/get-involved-hero.png');
-    /* Placeholder image path */
+    background-image: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), url('../img/get-involved-hero-new.png');
+    /* Updated image path */
     height: 60vh;
     background-attachment: fixed;
     background-position: center;
