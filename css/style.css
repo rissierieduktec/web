@@ -950,7 +950,7 @@ a:hover {
 }
 
 .story-card {
-    background: linear-gradient(135deg, #b8a4d8 0%, #d4c5f0 100%);
+    background: #4ca6f2;
     color: var(--secondary-color);
     padding: 0;
     border-radius: 20px;
