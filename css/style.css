@@ -1705,3 +1705,44 @@ a:hover {
         }
     }
 }
+/* Floating Donate Button */
+.floating-donate-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9999;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    border: 2px solid #FFDD00; /* Primary/Accent color border */
+}
+
+.floating-donate-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.floating-donate-btn form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.floating-donate-btn input[type="image"] {
+    display: block;
+    max-height: 40px; /* Consistent height */
+    width: auto;
+}
+
+/* Hide on very small screens if it covers content, or adjust */
+@media (max-width: 480px) {
+    .floating-donate-btn {
+        bottom: 10px;
+        left: 10px;
+        padding: 8px 12px;
+    }
+}
+
