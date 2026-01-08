@@ -1022,7 +1022,9 @@ a:hover {
 /* What We Do Page Styles */
 .visual-style-hero {
     background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('../img/what-we-do-hero-updated.jpg');
-    /* Original hero style */
+    /* Parallax effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     color: #ffffff;
@@ -1218,6 +1220,7 @@ a:hover {
         /* Original hero style */
         background-size: cover;
         background-position: center;
+        background-attachment: scroll;
         color: #ffffff;
         padding: 8rem 0;
         text-align: center;
@@ -1705,6 +1708,7 @@ a:hover {
         }
     }
 }
+
 /* Floating Donate Button */
 .floating-donate-btn {
     position: fixed;
@@ -1716,7 +1720,8 @@ a:hover {
     border-radius: 50px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
-    border: 2px solid #FFDD00; /* Primary/Accent color border */
+    border: 2px solid #FFDD00;
+    /* Primary/Accent color border */
 }
 
 .floating-donate-btn:hover {
@@ -1733,7 +1738,8 @@ a:hover {
 
 .floating-donate-btn input[type="image"] {
     display: block;
-    max-height: 40px; /* Consistent height */
+    max-height: 40px;
+    /* Consistent height */
     width: auto;
 }
 
@@ -1745,4 +1751,3 @@ a:hover {
         padding: 8px 12px;
     }
 }
-
