@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - HELP TODAY</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/courses.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for stars -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="logo"><img src="img/LOGO.png" width="150" alt="HELP TODAY Logo"></div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="who-we-are.html">Who We Are</a></li>
+                    <li><a href="what-we-do.html">What We Do</a></li>
+                    <li><a href="where-we-work.html">Where We Work</a></li>
+                    <li><a href="get-involved.html">Get Involved</a></li>
+                    <li><a href="courses.html" class="active">Courses</a></li>
+                    <li><a href="courses_es.html" class="lang-switch">ES</a></li>
+                    <li><a href="donate.html" class="btn btn-primary">Donate</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Udemy-style Hero -->
+        <section class="udemy-hero-section">
+            <div class="udemy-hero-container">
+                <div class="udemy-hero-bg"></div>
+                <div class="udemy-hero-content-box">
+                    <h1>Learn skills for the future</h1>
+                    <p>Courses in technology, English, leadership, and health to transform your life and community.</p>
+                    <div class="udemy-search-hero">
+                        <input type="text" placeholder="What do you want to learn?">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <!-- Categories -->
+            <section class="udemy-categories">
+                <h2 class="udemy-section-title">Explore Top Categories</h2>
+                <div class="category-grid">
+                    <button class="category-pill">Web Development</button>
+                    <button class="category-pill">Technical English</button>
+                    <button class="category-pill">Leadership</button>
+                    <button class="category-pill">Health & Wellness</button>
+                    <button class="category-pill">Robotics</button>
+                    <button class="category-pill">Entrepreneurship</button>
+                </div>
+            </section>
+
+            <!-- Featured Courses -->
+            <section class="courses-grid-section">
+                <h2 class="udemy-section-title">A broad selection of courses</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem; color: #2d2f31;">Choose from over 10 online video
+                    courses with new additions published every month.</p>
+
+                <div class="course-cards-grid">
+                    <!-- Course Card 1 -->
+                    <article class="course-card">
+                        <div class="course-image-wrapper">
+                            <img src="img/project-santa-lucia.jpg" alt="Programming Course">
+                        </div>
+                        <div class="course-content">
+                            <h3>Introduction to Programming with Python</h3>
+                            <div class="course-instructor">Eng. Maria Hernandez</div>
+                            <div class="course-rating">
+                                <span class="rating-number">4.8</span>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-count">(1,240)</span>
+                            </div>
+                            <div class="course-price">Free</div>
+                            <span class="bestseller-badge">Bestseller</span>
+                        </div>
+                    </article>
+
+                    <!-- Course Card 2 -->
+                    <article class="course-card">
+                        <div class="course-image-wrapper">
+                            <img src="img/tech-education.jpg" alt="Basic English">
+                        </div>
+                        <div class="course-content">
+                            <h3>English for Beginners: Level A1</h3>
+                            <div class="course-instructor">Prof. John Smith</div>
+                            <div class="course-rating">
+                                <span class="rating-number">4.6</span>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-count">(850)</span>
+                            </div>
+                            <div class="course-price">Free</div>
+                        </div>
+                    </article>
+
+                    <!-- Course Card 3 -->
+                    <article class="course-card">
+                        <div class="course-image-wrapper">
+                            <img src="img/project-leadership.jpg" alt="Youth Leadership">
+                        </div>
+                        <div class="course-content">
+                            <h3>Leadership and Public Speaking for Youth</h3>
+                            <div class="course-instructor">Lic. Carlos Ruiz</div>
+                            <div class="course-rating">
+                                <span class="rating-number">4.9</span>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-count">(2,100)</span>
+                            </div>
+                            <div class="course-price">Free</div>
+                            <span class="bestseller-badge">Featured</span>
+                        </div>
+                    </article>
+
+                    <!-- Course Card 4 -->
+                    <article class="course-card">
+                        <div class="course-image-wrapper">
+                            <img src="img/project-health.jpg" alt="Health and Nutrition">
+                        </div>
+                        <div class="course-content">
+                            <h3>Fundamentals of Nutrition and Health</h3>
+                            <div class="course-instructor">Dr. Elena Gomez</div>
+                            <div class="course-rating">
+                                <span class="rating-number">4.7</span>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-count">(530)</span>
+                            </div>
+                            <div class="course-price">Free</div>
+                        </div>
+                    </article>
+
+                    <!-- Course Card 5 -->
+                    <article class="course-card">
+                        <div class="course-image-wrapper">
+                            <img src="img/mission-image.jpg" alt="Educational Robotics">
+                        </div>
+                        <div class="course-content">
+                            <h3>Educational Robotics: Build Your Future</h3>
+                            <div class="course-instructor">Tech Help Today Team</div>
+                            <div class="course-rating">
+                                <span class="rating-number">4.8</span>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-count">(940)</span>
+                            </div>
+                            <div class="course-price">Free</div>
+                        </div>
+                    </article>
+
+                    <!-- Course Card 6 -->
+                    <article class="course-card">
+                        <div class="course-image-wrapper">
+                            <img src="img/what-we-do-hero.jpg" alt="Social Entrepreneurship">
+                        </div>
+                        <div class="course-content">
+                            <h3>Social Entrepreneurship: From Idea to Action</h3>
+                            <div class="course-instructor">Ana Martinez</div>
+                            <div class="course-rating">
+                                <span class="rating-number">4.9</span>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-count">(1,500)</span>
+                            </div>
+                            <div class="course-price">Free</div>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+        </div>
+
+        <!-- Trusted By Section -->
+        <section class="trusted-by-section">
+            <div class="container">
+                <p class="trusted-text">Trusted by leading organizations in the region</p>
+                <div class="trusted-logos">
+                    <!-- Using text explicitly as we don't have SVGs, but styled to look like placeholders -->
+                    <h3 style="font-weight: 700; color: #555;">Google.org</h3>
+                    <h3 style="font-weight: 700; color: #555;">UNICEF</h3>
+                    <h3 style="font-weight: 700; color: #555;">USAID</h3>
+                    <h3 style="font-weight: 700; color: #555;">World Vision</h3>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>HELP TODAY</h4>
+                    <p>Partnering to build a world where all children and youth enjoy equal rights and opportunities.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com/profile.php?id=61586048350650" target="_blank"
+                                rel="noopener noreferrer">Facebook</a></li>
+                        <li><a href="https://x.com/TodayHelp18806" target="_blank" rel="noopener noreferrer">X</a></li>
+                        <li><a href="https://www.instagram.com/accounts/edit/?hl=en" target="_blank"
+                                rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/company/111195973/admin/dashboard/" target="_blank"
+                                rel="noopener noreferrer">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Get the latest. Subscribe to our newsletter.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Help Today. ERM. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating PayPal Button -->
+    <div class="floating-donate-btn">
+        <form action="https://www.paypal.com/donate" method="post" target="_top">
+            <input type="hidden" name="hosted_button_id" value="Z7KKDLBVWKPZQ" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0"
+                name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

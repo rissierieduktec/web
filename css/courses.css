@@ -1,0 +1,265 @@
+/* Amazon/Udemy Style Course Page */
+
+/* Hero Section */
+.udemy-hero-section {
+    position: relative;
+    background-color: #f7f9fa;
+    /* Light gray usually seen in Udemy/Amazon */
+    padding: 2rem 0;
+    margin-bottom: 3rem;
+    overflow: hidden;
+}
+
+.udemy-hero-container {
+    max-width: 134rem;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    /* Fallback */
+}
+
+/* Simulate the big banner image */
+.udemy-hero-bg {
+    width: 100%;
+    height: 400px;
+    background-image: url('../img/hero-bg-new.jpg');
+    /* Reusing existing asset */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* The floating box with content */
+.udemy-hero-content-box {
+    background-color: #fff;
+    padding: 2.4rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .08), 0 4px 12px rgba(0, 0, 0, .08);
+    width: 44rem;
+    max-width: 100%;
+    position: absolute;
+    top: 6.4rem;
+    left: 4.8rem;
+    z-index: 10;
+}
+
+.udemy-hero-content-box h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    color: #2d2f31;
+    font-family: var(--font-heading);
+    /* Keeping site font consistency */
+}
+
+.udemy-hero-content-box p {
+    font-family: var(--font-body);
+    font-size: 1.6rem;
+    color: #2d2f31;
+    margin-bottom: 1.6rem;
+    line-height: 1.4;
+}
+
+/* Search bar inside hero (optional, or just use content) */
+.udemy-search-hero {
+    display: flex;
+    gap: 10px;
+}
+
+.udemy-search-hero input {
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid #2d2f31;
+    font-size: 1rem;
+}
+
+.udemy-search-hero button {
+    background-color: #2d2f31;
+    color: white;
+    border: none;
+    padding: 0 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Categories Section */
+.udemy-categories {
+    padding: 4rem 0;
+}
+
+.udemy-section-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: #2d2f31;
+    margin-bottom: 2rem;
+}
+
+.category-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+}
+
+.category-pill {
+    border: 1px solid #2d2f31;
+    border-radius: 9999px;
+    /* Pill shape */
+    padding: 1.2rem 2rem;
+    font-weight: 700;
+    color: #2d2f31;
+    background: transparent;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-family: var(--font-body);
+}
+
+.category-pill:hover {
+    background-color: #e3e7ea;
+    /* Light hover */
+}
+
+/* Courses Grid */
+.courses-grid-section {
+    padding: 2rem 0 6rem;
+}
+
+.course-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    /* Udemy-like narrow cards */
+    gap: 2rem;
+}
+
+.course-card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.course-card:hover .course-image-wrapper {
+    filter: brightness(0.9);
+}
+
+.course-image-wrapper {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    background: #ccc;
+    margin-bottom: 0.8rem;
+    overflow: hidden;
+}
+
+.course-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.course-content h3 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #2d2f31;
+    margin-bottom: 0.4rem;
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.course-instructor {
+    font-size: 1.2rem;
+    color: #6a6f73;
+    margin-bottom: 0.4rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: var(--font-body);
+}
+
+.course-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.rating-number {
+    font-weight: 800;
+    color: #b4690e;
+    font-size: 1.4rem;
+}
+
+.rating-stars {
+    color: #e59819;
+    font-size: 1.2rem;
+}
+
+.rating-count {
+    color: #6a6f73;
+    font-size: 1.2rem;
+}
+
+.course-price {
+    font-weight: 800;
+    font-size: 1.6rem;
+    color: #2d2f31;
+    font-family: var(--font-body);
+}
+
+.bestseller-badge {
+    background-color: #eceb98;
+    color: #3d3c0a;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 0.4rem 0.8rem;
+    display: inline-block;
+    margin-bottom: 0.4rem;
+    /* text-transform: uppercase; */
+}
+
+/* Trusted By Section */
+.trusted-by-section {
+    background-color: #f7f9fa;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.trusted-text {
+    color: #6a6f73;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    /* A bit larger */
+}
+
+.trusted-logos {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    opacity: 0.6;
+    flex-wrap: wrap;
+}
+
+.trusted-logo {
+    height: 30px;
+    background: #ccc;
+    /* Placeholder */
+    width: 100px;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+    .udemy-hero-content-box {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        padding: 2rem;
+    }
+
+    .udemy-hero-bg {
+        height: 250px;
+    }
+}
